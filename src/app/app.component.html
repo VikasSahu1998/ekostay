@@ -1,0 +1,59 @@
+<div class="tool">
+  <mat-toolbar style="background-color: #FBDCCF;">
+    <span class="example-spacer2">FAQ</span>
+    <span class="example-spacer1">PARTNER WITH US</span>
+    <span class="example-spacer">+91 9833078888</span>
+    <span class="example-spacer">bookings@ekostay.com </span>
+  </mat-toolbar>
+</div>
+
+<div class="button1">
+  <button mat-button>HOME</button>
+
+  <button mat-button [matMenuTriggerFor]="location">LOCATION<mat-icon>arrow_drop_down</mat-icon></button>
+ 
+  <mat-menu #location="matMenu">
+    <button mat-menu-item [matMenuTriggerFor]="Goa">Goa</button>
+    <button mat-menu-item [matMenuTriggerFor]="Maharashtra">Maharashtra</button>
+    <button mat-menu-item>Karnataka</button>
+    <button mat-menu-item>Uttarakhand</button>
+    <button mat-menu-item>Delhi</button>
+    <button mat-menu-item>Tamil Nadu</button>
+  </mat-menu>
+
+  <mat-menu #Goa="matMenu">
+    <button mat-menu-item>Anjuna</button>
+    <button mat-menu-item>North Goa</button>
+    <button mat-menu-item>Condolim</button>
+    <button mat-menu-item>Arambol</button>
+  </mat-menu>
+
+  <mat-menu #Maharashtra="matMenu">
+    <button mat-menu-item>Mumbai</button>
+    <button mat-menu-item>Pune</button>
+    <button mat-menu-item>Karjat</button>
+    <button mat-menu-item>Panvel</button>
+  </mat-menu>
+
+  <button mat-button [matMenuTriggerFor]="menu">LUXURY<mat-icon>arrow_drop_down</mat-icon></button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>EKO Glod</button>
+    <button mat-menu-item>Eko Luxe</button>
+  </mat-menu>
+
+  <button mat-button [matMenuTriggerFor]="menu">ABOUT US<mat-icon>arrow_drop_down</mat-icon></button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>Over Story </button>
+    <button mat-menu-item>Over Team</button>
+  </mat-menu>
+
+  <button mat-button>MEDIA</button>
+
+  <button mat-button>CONTACT US</button>
+
+  <button mat-button>EKO MEMBERSHIP</button>
+
+  <button mat-button>LOGIN</button>
+</div>
+
+<app-ekostay-villa-blanco></app-ekostay-villa-blanco>
